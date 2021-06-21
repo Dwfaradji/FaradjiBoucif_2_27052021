@@ -3,9 +3,13 @@
 <html lang="fr-FR">
 
 <head>
+    
     <meta charset="utf-8"/>
     
+    
     <link rel="stylesheet" href="reservia.css"/>
+
+    <script src="https://kit.fontawesome.com/e1abf546b8.js" crossorigin="anonymous"></script>
     
           <title>Réservia</title>
     </head>
@@ -17,7 +21,7 @@
         <header>
           <div id="logo">
             
-            <img src="Reservia@3x.png" alt="logo"/>
+            <img src="images/Reservia@3x.png" alt="logo"/>
            
            
      
@@ -42,40 +46,53 @@
             
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
+            </div>
 
                                 <!-- Barre de recherche -->
 
             <div id="bouton_recherche">
                 <form action="#" method="POST" class="barre_de_recherche">
-                <label for="Rechercher"><img class="icone" src="" alt=""></label>
+               <div><label for="Rechercher"> <i class="fas fa-map-marker-alt fa-lg"></i></label></div>
                 <input type="search" name="Recherche" id="rechercher"
                 placeholder="Marseille, France">
-                <button id="Rechercher">Rechercher</button></form></div>
+                <button id="Rechercher">Rechercher</button></form>
             </div>
-            
+           
+           
             
             
                                 <!-- Filtres -->
         <div class="filtrage">
             
-            <h2 class="filtres1">Filtres</h2>
+            <div class="filtres1"><h2>Filtres</h2>
             
-            <ul class="filtres2">
+            <div class="icones_filtres">
+                <i class="fas fa-money-bill-wave "></i></div>
+                <div class="filtre_texte">Économique</div>
+               
+                <div class="icones_filtres">
+                    <i class="fas fa-child"></i></div>
+                <div class="filtre_texte">Familiales</div>
                 
-                <li class="logosf"> <i class="eco"></i><span>Économique</span></li>
-                <li class="logosf"> <i class="famille"></i><span>Familial</span></li>
-                <li class="logosf"> <i class="romant"> </i><span>Romantique</span></li>
-                <li class="logosf"><i class="animaux"> </i><span>Animaux autorisés</span></li>
-            
-            </ul>
+                <div class="icones_filtres">
+                    <i class="fas fa-heart"></i></div>
+                    <div class="filtre_texte">Romantique</div>
+                    
+                    <div class="icones_filtres">
+                        <i class="fas fa-dog"></i></div>
+                        <div class="filtre_texte">Animaux autorisés</div>
+                       
+             </div>
         </div>
         </section>
-
-        
-        
+        <div class="info">
+        <div class="parenticone flexCentre">
+            <i class="fas fa-info fa-xs " style="color:blue"></i>
+        </div>
         <p>Plus de 500 logements disponible dans cette ville</p>
-            
+            </div>
     </header>
+   
     
                                     <!-- Hébergements -->
    <div class="block">
@@ -199,7 +216,7 @@
                 <h5>Parc Longchamp</h5></div>
                 </div>
         </div>
-    </div>
+    
     </section>
                                 <!--Pied de page -->
         <footer>
