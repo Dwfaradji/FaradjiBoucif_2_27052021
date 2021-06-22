@@ -2,8 +2,9 @@
 #bloc_page
 {
     
-    width:100%;
-    height: 100%;
+    width:auto;
+    height: auto;
+    margin: 10px 10px 10px 10px;
 }
 #logo
 {
@@ -160,6 +161,7 @@ h2
    display: flex;
    align-items: center;
    justify-content: center;
+   
   width: 30%;
 
 border-radius: 50px;
@@ -203,6 +205,7 @@ color: #0065fc;
 {
     display: flex;
     align-items: center;
+   
     justify-content: center;
     width: 20px;
     height: 20px;
@@ -219,19 +222,58 @@ color: #0065fc;
 
 
 
+ 
                                 /* Hébergements à Marseille */
+.afficher_plus
+{
+    font-weight: bold;
+    margin-left: 45px;
+    display: flex;
+    align-self: flex-end;
+    
+   
+}
+.hebergmars p 
+{
+    margin-bottom: 5px;
+}
 
+
+.heberg_texte
+{
+    height: auto;
+   margin-top: -10px;
+   padding-left: 20px;
+   
+}
+ 
+.star
+{
+    color: #0065fc;
+   display: inline-block;
+   font-size:x-small;
+  
+}
 .hh3
 {
-    margin-left: 50px;
+    margin-left: 45px;
+    width: 50%;
+    margin-top: 10px;
+    display: inline-block;
+    
 }
 .hebergmars
 {
     background-color: #f2f2f2;
     border-radius: 15px;
-    width: 60%;
-   margin:10px;
+    width: auto;
+    height: auto;
+   margin-top:10px;
+   margin-right: 15px;
    
+   
+   
+  padding-top: 20px; 
     
   
  
@@ -239,39 +281,70 @@ color: #0065fc;
 .hebergement_contener
 {
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
+    height: auto;
     
+    margin: 20px;
     
     
 }
 .hebergmars img
 {
+    display: flex;
+    justify-content: flex-start;
     border: 2px solid white;
     border-radius: 15px 15px 0px 0px;
-    width: 250px;
+    width: 246px;
     height: 100px;
     object-fit: cover;
+    align-items: flex-start;
+   
+   
+    
 } 
+
+
 .hebergement_contener article
 {
     border-radius: 15px 15px 15px 15px;
     width: 250px;
+    height: auto;
     border: 2px solid white;
     background-color: white;
     margin: 10px;
+    
+    
    
 }
 
                         /*les plus populaires */
+
+.icones_populaires
+{
+    width: 20Px;
+    margin-left: 90px;
+}
+.les_plus_populaires div
+{
+   display: inline-block;
+}
+.texte_populaires
+{
+    
+    margin-bottom: 20px;
+    display: inline-block;
+        width:50%;
+}
 .populaires
 {
     background-color: #f2f2f2;
     border-radius: 15px;
     width: 30%;
- 
-   margin: 10px;
+    
+   
+   margin-top: 10px;
    text-align: left;
   
   
@@ -284,7 +357,6 @@ color: #0065fc;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
     margin: 10px;
     padding: 10px;
    
@@ -296,16 +368,16 @@ color: #0065fc;
     border: 2px solid white;
     border-radius: 15px 0px 0px 15px;
     width: 100px;
-    height: 100px;
+    height: 123px;
     object-fit: cover;
-    margin: 2px 2px 2px 2px ;
-    padding: 2px 2px 2px 2px ;
+    margin: 0px 10px 0px 0px ;
+    
 }
 .populaire_contener article
 {
     border-radius: 15px 15px 15px 15px;
     width: 380px;
-    height: 111px ;
+    height: 128px ;
     border: 2px solid white;
     background-color: white;
     margin: 10px;  
@@ -321,7 +393,8 @@ color: #0065fc;
     float: left;
 }
 
-                /* activité à marseille */
+
+                        /* activité à marseille */
 
 h4
 {
@@ -359,7 +432,7 @@ h5
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    margin: 30px ;
+   
     justify-content: space-around;
 }
 .act1 
