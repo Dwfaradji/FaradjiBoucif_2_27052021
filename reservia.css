@@ -5,11 +5,19 @@
     width:auto;
     height: auto;
     margin: 10px 10px 10px 10px;
+   
+
+}
+
+body
+{
+    font-family : 'Raleway', sans-serif ;
 }
 #logo
 {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 
@@ -22,57 +30,63 @@
     height: 60px;
     }
 
+    h1
+    {
+        margin-bottom: -10px;
+    }
                             /* Navigation */
+
+
+
+
+
 nav ul
 {
    
     list-style-type: none;
+    
     display: flex;
     justify-content: flex-end;
-   
-  
+    justify-content: space-between;
+    align-content: center;
+    font-size: large;
+    color: chartreuse;
     
+   
 } 
+
+
 nav li 
 {
-   
-  
-    margin-right: 40px;
-    margin-bottom: 50px;
-    
+   margin-top: 30px;
+ margin-right: 50px;
+ 
 } 
-nav:hover
+
+.nav1
 {
+    text-decoration:overline;
+    color: #0065fc;
     
-    color: #f2f2f2;
-    text-decoration: none;
+    
 }
 
 
                             /* Barre de recherche */
 
-
-
-#bouton_recherche
+::placeholder
 {
-    
-    width: 370px;
-    background-color: white;
-    border: 1px solid rgb(241, 241, 241);
-    border-radius: 15px;
-   display: flex;
-   flex-direction: row;
+    color: black;
 }
+
 
 .barre_de_recherche
 {
-    
+    margin-top:25px;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: row;
     height: 50px;
-    
-
-    
     
 }  
 label
@@ -85,8 +99,7 @@ label
    background-color: #f2f2f2;
     
     border-radius: 1em 0 0 1em;
-    
-   
+
     
 }
 
@@ -102,6 +115,7 @@ label
     border: 1px solid #f2f2f2;
     border-radius: 0px 15px 15px 0px ;
     margin:0px 0px -5px 0px;
+    
  
     
 
@@ -112,13 +126,15 @@ input
    
  border: none;
  font-weight: 700;
- padding: 0px 0px 0px 8px ;
- font-size: medium;
-  
+ 
+ font-size: large;
+   
 }  
 #rechercher 
 {
     border: 1px solid #f2f2f2;
+    
+    
 }
 
                             /* Fitres */
@@ -137,6 +153,8 @@ h2
 {
    display: flex;
    justify-content: flex-start;
+   font-weight: bold;
+   font-size: 1.1em;
    
   
  
@@ -181,14 +199,14 @@ color: #0065fc;
 {     
     display: flex;
     align-items: center;
-    height: 50px;
+  
    color: black;
    height: 50px;
     width:auto;
-    border: 1px solid #f2f2f2;
-    padding-left: 80px;
+    border: 2px solid #f2f2f2;
+    padding-left: 60px;
     border-radius: 50px;
-    padding-right: 5px;
+   padding-right: 15px;
     margin-left: 20px;
     
 }
@@ -213,6 +231,7 @@ color: #0065fc;
     border-radius: 25px 25px 25px 25px;
     margin-right: 5px;
     padding: 2px;
+    
 }
 
 
@@ -252,6 +271,7 @@ color: #0065fc;
     color: #0065fc;
    display: inline-block;
    font-size:x-small;
+
   
 }
 .hh3
@@ -330,10 +350,9 @@ color: #0065fc;
 {
    display: inline-block;
 }
-.texte_populaires
+.texte_populaires 
 {
-    
-    margin-bottom: 20px;
+   
     display: inline-block;
         width:50%;
 }
@@ -375,6 +394,8 @@ color: #0065fc;
 }
 .populaire_contener article
 {
+    display: flex;
+    align-items: center;
     border-radius: 15px 15px 15px 15px;
     width: 380px;
     height: 128px ;
@@ -392,7 +413,11 @@ color: #0065fc;
 {
     float: left;
 }
-
+article p
+{
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
 
                         /* activité à marseille */
 
@@ -405,13 +430,19 @@ h5
 {   
     display: flex;
     align-items: flex-start;
-    justify-content: center;
-    text-align: center;
-    margin: 1px 1px 1px 1px ;
+    justify-content: flex-start;
+   
+    
+    margin: 2px 2px 2px 15px ;
+    
 }                
-.photo_block1
+.photo_block1 
 {
     display: inline-block;
+   
+  
+   
+   
 
 }
 
@@ -419,11 +450,13 @@ h5
 .block2 div
 {
 
-    background-color: white;
+   
     margin: 10px 10px 10px 10px;
     padding: 1px 1px 1px 1px;
- 
    
+ 
+    
+
     margin: 2px;
     
 }                
@@ -439,7 +472,7 @@ h5
 {
     
     border: 2px solid white;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 0px 0px;
     width: 300px;
     height: 433px;
     
@@ -451,7 +484,7 @@ h5
 {
    
     border: 2px solid white;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 0px 0px;
     width: 300px;
     height: 200px;
     
@@ -474,7 +507,7 @@ h5
 {
    
     border: 2px solid white;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 0px 0px;
     width: 300px;
     height: 433px;
     
@@ -485,7 +518,7 @@ h5
 {
    
     border: 2px solid white;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 0px 0px;
     width: 300px;
     height: 200px;
     background-color: black ;
@@ -496,7 +529,7 @@ h5
 {
    
     border: 2px solid white;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 0px 0px;
     width: 300px;
     height: 200px;
     background-color: black ;
