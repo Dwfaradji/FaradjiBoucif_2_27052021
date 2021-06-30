@@ -9,9 +9,14 @@
 
 }
 .clic
-{
+{   display: flex;
+    flex-direction: row;
     text-decoration: none;
     color: black;
+}
+.conteneur_block_hebergements .clic{
+    display: flex;
+    flex-direction: column;
 }
 
 body
@@ -36,7 +41,7 @@ body
     }
 
     h1
-    {
+    {   font-size: 1.3em;
         margin-bottom: -5px;
     }
                             /* Navigation */
@@ -64,6 +69,7 @@ nav ul
     justify-content: flex-end;
     justify-content: space-between;
     align-content: center;
+    flex-wrap: wrap;
     font-size: large;
 } 
 nav li 
@@ -119,7 +125,7 @@ input
 
 ::placeholder
 {
-    margin-left: 2px;
+    margin-left: 5px;
     color: black;
 }
 
@@ -146,7 +152,7 @@ input
    flex-wrap: wrap;
 }
 h2
-{
+{   font-size: 1.2em;
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -208,14 +214,15 @@ h2
     width: 50%;
     margin-top: 10px;
     display: inline-block;
-    font-size: x-large;
+    font-size: 1.3em;
 }
 .conteneur_block
 {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    align-self: auto;
 }
 .conteneur_block_hebergements
 {
@@ -223,7 +230,7 @@ h2
     flex-wrap: wrap;
     background-color: #f2f2f2;
     border-radius: 15px;
-    width: 65%;
+    width: 60%;
     height: auto;
     margin-top:10px;
     margin-right: 15px;
@@ -263,17 +270,22 @@ h2
     background-color: white;
     margin: 10px;
 }
+
 .heberg_texte
 {   
     height: auto;
     margin-top: -10px;
     padding-left: 20px;
 }
+
 .star
 {
     color: #0065fc;
-    display: inline-block;
+    display: inline-flex;
     font-size:x-small;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+   
 }
 .afficher_plus
 {
@@ -288,14 +300,17 @@ h2
                                          /*les plus populaires */
 
 
-
-.les_plus_populaires
+.populaire_contener
 {
+    margin-top: 10px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    width: auto;
     display: flex;
-    flex-direction: column; 
-    align-content: space-between;
-    margin-top: 20px;
-    padding-top: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+   
 }
 .icones_populaires
 {   
@@ -309,54 +324,50 @@ h2
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 20px;
+    
     margin-top: 10px;
     font-size: large;
 }
-
-.texte_populaires 
+.les_plus_populaires
 {
-    display: inline-block;
-    width:50%;
+   display: flex;
+   flex-direction: column;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.les_plus_populaires article
+{
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    border: 2px solid white;
+    background-color: white;
+    margin-bottom: 15px;
+   margin-left: 50px;
 }
 
-.populaire_contener img
+.les_plus_populaires img
 {
     border: 2px solid white;
     border-radius: 15px 0px 0px 15px;
     width: 100px;
-    height: 123px;
+    
     object-fit: cover;
-    margin-right: 5px;
+   
 }
-.populaire_contener
+.texte_populaires 
 {
-    margin-top: 10px;
-    background-color: #f2f2f2;
-    border-radius: 15px;
-    height: auto;
-    text-align: left;
-}
-
-.populaire_contener article
-{  
-    border-radius: 15px 15px 15px 15px;
-    width: 380px;
-    height: 128px ;
-    border: 2px solid white;
-    background-color: white;
-    margin: 10px; 
+    width: 50%;
+   margin-left: 5px;
     
 }
-.images_populaires
-{
-    float: left;
-}
-article p
-{
-    margin-top: -10px;
-    margin-bottom: 5px;
-}
+
+
+
+    
+
 
                         /* activité à marseille */
 
@@ -364,22 +375,32 @@ article p
 .conteneur_activites
 {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    
     width: 100%;
    padding: 10px 10px 10px 10px ;
 }
 
+
 .cadre 
-{
+{  
+    
     border: 1px solid #f2f2f2;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
     padding-bottom: -20px;
     box-shadow: #f2f2f2;
- 
     margin-top: 20px;
+}
+
+
+
+.cadre img
+{   
+    object-fit: cover;
+   
 }
 h4
 {
@@ -447,6 +468,7 @@ footer
     background-color: #f2f2f2;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     
     
 }
@@ -472,4 +494,89 @@ h4
     width: 90%;
     font-size: 18px;
    
+}
+
+                                /* media queries*/
+
+@media screen and (max-width: 1024px) 
+{
+    .conteneur_block_hebergements{
+        width: 100%;
+        justify-content: flex-start;
+        margin-right: 0px;
+    }
+    .hebergement_contener article{
+        font-size: 1em;
+        justify-content: flex-start;
+        }
+    .hebergement_contener{
+        justify-content: center;
+        width: 100%;
+        
+    }
+   .conteneur_block{
+       flex-wrap: wrap;
+   }
+   .les_plus_populaires article{
+       align-self: flex-end;
+       
+       width: 100%;
+        
+        flex-direction: column;
+   }
+   .populaire_contener{
+       justify-content: center;
+       padding-right: 50px;
+       justify-content: space-around;
+       width: 100%;
+       
+       
+   }
+   .les_plus_populaires{
+       align-items: flex-start;
+       flex-direction: row;
+       width: 100%;
+      
+   }
+   .les_plus_populaires img{
+       width: 100%;
+       height: 130px;
+       border-radius: 15px 15px 0px 0px;
+   }
+   .texte_populaires{
+       width: 200px;
+       justify-content: flex-start;
+   }
+   .clic{
+       flex-direction: column;
+   }
+   .cadre_filtre{
+       margin-right: 10px;
+   }
+       
+   .act1 , .act2 , .act3 , .act4 ,.act5 , .act6 {
+       width: 450px;
+   }
+   .conteneur_activites{
+       justify-content: space-around;
+       margin-right: 20px;
+   }
+  footer div{
+   margin-right: 100px;
+  }
+  footer{
+     
+     height: 250px;
+  } 
+}
+@media screen and (max-width: 1000px)
+ {
+     #logo{
+       display: block;
+    
+     }
+    
+
+     
+    
 }
