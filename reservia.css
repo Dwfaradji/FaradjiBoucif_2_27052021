@@ -78,8 +78,9 @@ nav ul
 h1
 {   
     font-size: 1.3em;
-    margin-bottom: -5px;
+    margin-bottom: 5px;
 }
+
                                     /* Barre de recherche */
 
 .bloc_barre_de_recherche
@@ -102,6 +103,7 @@ input
     font-weight: 700;
     font-size: large;
     margin-left: 15px;
+    margin-right: 5px;
 }
 ::placeholder
 {
@@ -217,6 +219,7 @@ h2
     font-size:x-small;
     margin: 5px 5px 5px 5px;
     padding-bottom: 2px;
+  
 }
  .star_white
 {
@@ -255,7 +258,9 @@ h2
 }
 .hebergement_contener article
 {
-   
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
     border-radius: 15px 15px 15px 15px;
     height: auto;
     border: 3px solid white;
@@ -277,6 +282,7 @@ h2
     margin-top: -10px;
     padding-left: 20px;
     font-size: 0.9em;
+    width: 100%;
 }
 .heberg_texte p
 {
@@ -528,6 +534,24 @@ footer div
   .block_cadre, .block_cadre2{
      margin-right: 10px;
     }
+    .heberg_texte {
+        
+        height: 100px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+        align-self: center;
+        }
+        .heberg_texte p {
+            display: flex;
+            
+            }
+            .heberg_texte h3 {
+                margin-top: 5px;
+                height: 30px;
+                }
 }
 
 @media screen and (max-width: 1024px) 
@@ -571,6 +595,9 @@ footer div
        margin-top: -10px;
        justify-content: center;
       
+   }
+   .titre_populaires{
+       width: 90%;
    }
    .les_plus_populaires img{
        width: 100%;
@@ -702,6 +729,7 @@ footer div
         padding-left: 15px;
         padding-right: 15px;
         display: block;
+        width: 80%;
     }
 }
 
@@ -795,6 +823,8 @@ footer div
          display: block;
          padding-left: 0px;
          padding-right: 0px;
+         margin: 0px;
+         width: 90%;
     }
     .titre_populaires{
         width: 90%;
@@ -803,24 +833,30 @@ footer div
     }
     .les_plus_populaires article{
         flex-direction: row;
-        height: 150px;
+        height: 140px;
+        min-width: 236px;
+        margin-right: 0px;
+        width: auto;
     }
     .les_plus_populaires img{
-        height: 100%;
-       width: 60%;
+      
+       width: 40%;
+       height: 100%;
         border-radius: 15px 0px 0px 15px;
     }
     .texte_populaires{
         flex-direction: column;
         justify-content: space-between;
         display: flex;
+        width: 190px;
     }
     .texte_populaires h3{
         margin: 10px 5px 0px 0px;
     }
     .texte_populaires p{
-        margin-top: 5px;
-        margin-bottom: 10px;
+        margin-top: 0px;
+        padding-bottom: 25px;
+        margin-bottom: 0px;
     }
     .conteneur_block_hebergements{
         background-color: white;
