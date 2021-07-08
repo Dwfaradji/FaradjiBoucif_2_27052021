@@ -3,13 +3,15 @@ body
 {
     
     max-width:1500px;
-    margin: 2px;
+    
    
     font-family : 'Raleway', sans-serif ;
 }
 #bloc_page
 {
     margin-top: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
    
 }
 a
@@ -804,9 +806,7 @@ footer div
     .nav1:hover{
         border-top: none;
     }  
-    body{
-        min-width: 419px;
-    } 
+    
   
     
 }
