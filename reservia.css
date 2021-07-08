@@ -3,15 +3,14 @@ body
 {
     
     max-width:1500px;
-    margin: 0px;
+    margin: 2px;
    
     font-family : 'Raleway', sans-serif ;
 }
 #bloc_page
 {
     margin-top: 4px;
-    margin-left: 20px;
-    margin-right: 20px;
+   
 }
 a
 {  width: 30%;
