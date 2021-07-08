@@ -3,12 +3,13 @@ body
 {
     
     max-width:1500px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
+   
     font-family : 'Raleway', sans-serif ;
 }
 #bloc_page
 {
+    margin-top: 4px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -45,14 +46,16 @@ a
 {
 padding-top: 30px;
 text-decoration: none;
-color: #0065fc;
+color: black;
 margin-top: 30px;
 margin-right: 50px;
 }
 .nav1:hover
 {
-    border-top: 1px solid #0065fc;
+    border-top: 2px solid #0065fc;
     text-decoration: none;
+    color: #0065fc;
+    
 }
 .nav2
 {
@@ -60,7 +63,7 @@ margin-right: 50px;
     display: flex;
     list-style-type: none;
     margin-top: 30px;
-    margin-right: 10px;
+    padding-right: 20px;
     font-size: large;
 }
 nav ul
@@ -138,9 +141,10 @@ h2
     margin-right: 10px;
     margin-left: 10px;
 }
-.filtres div:hover
+.bloc_filtres :hover
 {
     color:#0065fc;
+    background-color: #DEEBFF;
 }
 
 .bloc_filtres
@@ -525,7 +529,7 @@ footer div
                                      /* media queries*/
 
 
-@media screen and (max-width: 1260px) and (min-width: 1023px)
+@media screen and (max-width: 1340px) and (min-width: 1023px)
  {
   .conteneur_activites{
       flex-wrap: nowrap;
@@ -535,9 +539,10 @@ footer div
      margin-right: 10px;
     }
     .heberg_texte {
-        
+        text-align: left;
         height: 100px;
         margin-top: 0px;
+        padding-left: 0px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -724,12 +729,32 @@ footer div
     }
     .les_plus_populaires article{
         width: 100%;
+        height: 130px;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    .les_plus_populaires img{
+        border-radius: 15px 0px 0px 15px;
+        height: 100%;
     }
     .les_plus_populaires{
         padding-left: 15px;
         padding-right: 15px;
         display: block;
         width: 80%;
+    }
+    .texte_populaires{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .texte_populaires h3{
+        margin-top: 5px;
+        height: 35%;
+        width: 200px;
+    }
+    input{
+        width: 200px;
     }
 }
 
@@ -779,7 +804,12 @@ footer div
     }
     .nav1:hover{
         border-top: none;
-    }    
+    }  
+    body{
+        min-width: 419px;
+    } 
+  
+    
 }
 
 @media screen and (max-width:375px)
@@ -973,6 +1003,9 @@ footer div
     }
     body{
         min-width: 250px
+    }
+    input {
+        width: 75%;
     }
 }
 
