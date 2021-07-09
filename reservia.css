@@ -260,7 +260,7 @@ h2
     justify-content: space-around;
     height: auto;
     margin: 20px;
-    font-size: 0,5em;
+    font-size: 1em;
 }
 .hebergement_contener article
 {
@@ -741,7 +741,7 @@ footer div
     .texte_populaires h3{
         margin-top: 5px;
         height: 35%;
-        width: 200px;
+       
     }
     input{
         width: 200px;
@@ -809,7 +809,11 @@ footer div
         padding-left: 15px;
         padding-right: 15px;
         display: block;
-        width: 80%;}  
+        width: 80%;
+    } 
+    .populaire_contener{
+        flex-wrap: nowrap;
+    } 
     
   
     
@@ -841,6 +845,13 @@ footer div
     }
     input{
         width: 100%;
+    }
+    .texte_populaires{
+        width: 60%;
+
+    }
+    .les_plus_populaires img{
+        width: 50%;
     }
 }
 
@@ -902,7 +913,7 @@ footer div
     }
     .les_plus_populaires img{
       
-       width: 40%;
+       width: 30%;
        height: 100%;
         border-radius: 15px 0px 0px 15px;
     }
@@ -911,6 +922,7 @@ footer div
         justify-content: space-between;
         display: flex;
         width: 190px;
+        margin-left: 5px;
     }
     .texte_populaires h3{
         margin: 10px 5px 0px 0px;
@@ -1038,7 +1050,7 @@ footer div
         min-width: 250px
     }
     input {
-        width: 75%;
+        width: 90%;
     }
 }
 @media screen and (max-width:284px)
