@@ -1,12 +1,12 @@
                                         /* haut de la page */
 body
 {
-    margin: 0px;
+    margin-top: 0px;
     font-family : 'Raleway', sans-serif ;
 }
 #bloc_page
 {
-    margin-top: 4px;
+   
     margin-left: auto;
     margin-right: auto;
     max-width:1500px;
@@ -40,10 +40,9 @@ a
 }
 .nav1
 {
-padding-top: 30px;
+padding-top: 28px;
 text-decoration: none;
 color: black;
-margin-top: 30px;
 margin-right: 50px;
 }
 .nav1:hover
@@ -85,11 +84,10 @@ h1
     margin-top:25px;
     margin-bottom: 25px;
     display: flex;
-   
-   align-items: center;
-  
-  
-   border-radius: 15px;
+    border: 1px solid #f2f2f2;
+    align-items: center;
+    border-radius: 15px;
+    max-width: 450px;
 }
 label
 {
@@ -111,7 +109,7 @@ input
     color: black;
 }
 
-#boutton_rechercher
+.boutton_rechercher
 {
     font-size: 1.2em;
     background-color: #0065fc;
@@ -121,10 +119,12 @@ input
     border: 1px solid #f2f2f2;
     border-radius: 0px 15px 15px 0px ;
 }
-.icone_recherche
+.boutton_rechercher i
 {
     display: none;
 }
+   
+
 
                                   /* Fitres */
  .conteneur_filtres
@@ -217,8 +217,8 @@ h2
 {
     color: #0065fc;
     font-size:x-small;
-    margin: 5px 5px 5px 5px;
-    padding-bottom: 2px;
+    padding: 5px 5px 5px 5px;
+   
   
 }
  .star_white
@@ -233,7 +233,6 @@ h2
     background-color: #f2f2f2;
     border-radius: 15px;
     width: 63%;
-    height: auto;
     margin-top:10px;
     margin-right: 10px;
     padding-top: 20px; 
@@ -252,8 +251,6 @@ h2
     justify-content: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: auto;
-    margin: 20px;
     font-size: 1em;
 }
 .hebergement_contener article
@@ -296,11 +293,8 @@ h2
 
 .afficher_plus
 {
-    margin-top: 20px;
-    margin-bottom: 40px;
     font-weight: bold;
-    margin-left: 50px;
-    
+    margin: 20px 0px 40px 50px;
     font-weight: bold;
     text-decoration: none;
     color: black;
@@ -342,8 +336,8 @@ h2
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-    margin-top: 20px;
-    padding-top: 20px;
+   
+    
    margin: 20px;
 
    
@@ -352,8 +346,7 @@ h2
 {
     border-radius: 15px 15px 15px 15px;
     display: flex;
-    flex-direction: row;
-    
+  
     border: 3px solid white;
     background-color: white;
     margin-bottom: 15px;
@@ -399,9 +392,7 @@ h4
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
-    width: 100%;
-    padding: 10px 10px 10px 10px ;
+   
 }
 
 
@@ -413,7 +404,7 @@ h4
     background-color: white;
     box-shadow: 10px 10px 10px #f2f2f2;
     margin-bottom: 30px;
-    width: 100%;
+    
 }
 .cadre2
 {
@@ -422,7 +413,7 @@ h4
     background-color: white;
      box-shadow: 5px 5px 5px #f2f2f2;
      margin-bottom: 30px;
-     width: 100%;
+    
 }
 .block_cadre, .block_cadre2
 {
@@ -544,8 +535,8 @@ footer li{
    }
    .les_plus_populaires article{
        flex-direction: column;
-      max-width: 698px;
-       margin-right: 20px;
+      
+       margin: 20px;
         
    }
    .populaire_contener{
@@ -554,15 +545,9 @@ footer li{
     }
    .les_plus_populaires{
       
-      justify-content: center; 
-    flex-direction: row;
-    
-      
-      
-   }
-   .titre_populaires{
-       width: 90%;
-   }
+        justify-content: center; 
+        flex-direction: row;
+    }
    .les_plus_populaires img{
       
         width: 100%;
@@ -586,10 +571,7 @@ footer li{
       width: 45%;
   }
    
-   .conteneur_activites{
-       justify-content: space-around;
-       margin-right: 20px;
-   }
+   
   
  
 }
@@ -618,10 +600,7 @@ footer li{
     .conteneur_block{
         flex-direction: column-reverse;
     }
-    .titre_hebergement{
-        width: 100%;
-        margin-left: 15px;
-    }
+   
    
     .hebergement_contener{
         display: flex;
@@ -702,12 +681,15 @@ footer li{
         justify-content: center;
     }
 
-    #boutton_rechercher{
+    .boutton_rechercher span{
         display: none;
+    }
+    .boutton_rechercher i{
+        display: block;
     }
     
     input{
-        width: 50%;
+        min-width: 50%;
     }
     .conteneur_filtres{
         margin: 0px;
@@ -767,6 +749,9 @@ footer li{
     .nav1{
         margin-right: 0px;
     }
+    nav li{
+        border-bottom: 2px solid #f2f2f2;
+    }
     .afficher_plus{
         margin-top: 30px;
         margin-bottom: 0px;
@@ -778,7 +763,7 @@ footer li{
     }
     h4 {
         padding-top: 25px;
-        margin-left: 15px;
+       
     }
     footer{
         
