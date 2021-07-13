@@ -6,7 +6,6 @@ body
 }
 #bloc_page
 {
-   
     margin-left: auto;
     margin-right: auto;
     max-width:1500px;
@@ -25,32 +24,29 @@ a
 #logo
 {
     display: flex;
-   
 }
 #logo img
 {
     height: 60px;
 }
 
-
-                                    /* navigation */
+                                         /* navigation */
 .navigation
 {
     display: flex;
 }
 .nav1
 {
-padding-top: 28px;
-text-decoration: none;
-color: black;
-margin-right: 50px;
+    padding-top: 28px;
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
 }
 .nav1:hover
 {
     border-top: 2px solid #0065fc;
     text-decoration: none;
     color: #0065fc;
-    
 }
 .nav2
 {
@@ -66,10 +62,10 @@ nav ul
 {
     list-style-type: none;
     display: flex;
-    
     font-size: large;
     margin-top: 30px;
 } 
+
                                         /* Titre */
 h1
 {   
@@ -87,7 +83,7 @@ h1
     border: 1px solid #f2f2f2;
     align-items: center;
     border-radius: 15px;
-    max-width: 450px;
+    max-width: 430px;
 }
 label
 {
@@ -108,7 +104,6 @@ input
 {
     color: black;
 }
-
 .boutton_rechercher
 {
     font-size: 1.2em;
@@ -144,19 +139,16 @@ h2
     color:#0065fc;
     background-color: #DEEBFF;
 }
-
 .bloc_filtres
 {
-   display: flex;
-  
-   margin-right: 10px;
-   background-color: white;
-   flex-wrap: wrap;
+    display: flex;
+    margin-right: 10px;
+    background-color: white;
+    flex-wrap: wrap;
 }
 .cadre_filtre
 {
     display: flex;
-   
     border: 1px solid #f2f2f2;
     border-radius: 27px 27px 27px 27px;
     margin-right: 30px;
@@ -179,14 +171,12 @@ h2
 .filtre_texte
 {   
     display: flex;  
-   align-items: center;
+    align-items: center;
     color: black;
     margin-left: 4px;
 }
 
-
-                                    /* Texte plus icone info */
-
+                         /* Texte plus icone info */
 .info 
 {
     display: flex;
@@ -205,6 +195,7 @@ h2
     padding: 2px;
     color:#0065fc;
 }
+
                             /*Conteneur hebergement et populaire */
 .conteneur_block
 {
@@ -218,13 +209,12 @@ h2
     color: #0065fc;
     font-size:x-small;
     padding: 5px 5px 5px 5px;
-   
-  
 }
  .star_white
 {
     color: #f2f2f2;
 }
+
                                     /* Hébergements à Marseille */
 .conteneur_block_hebergements
 {
@@ -240,9 +230,7 @@ h2
 .titre_hebergement
 {
     margin-left: 45px;
-    
     margin-top: 10px;
-   
     font-size: 1.3em;
 }
 .hebergement_contener
@@ -259,7 +247,7 @@ h2
     justify-content: space-between;
     display: flex;
     border-radius: 15px 15px 15px 15px;
-    
+    box-shadow: 15px 15px 15px  #d6d4d4;
     border: 3px solid white;
     background-color: white;
     margin: 10px;
@@ -267,18 +255,15 @@ h2
 .hebergement_contener img
 {
     justify-content: center;
-   
     border-radius: 15px 15px 0px 0px;
     width: 250px;
     height: 110px;
     object-fit: cover;
-    
 }
 .heberg_texte
 {   
     padding-left: 5px;
     font-size: 0.9em;
-   
 }
 .heberg_texte h3
 {
@@ -290,7 +275,6 @@ h2
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
 .afficher_plus
 {
     font-weight: bold;
@@ -300,10 +284,7 @@ h2
     color: black;
 }
 
-
-
-                                         /*les plus populaires */
-
+                            /*les plus populaires */
 .populaire_contener
 {
     margin-top: 10px;
@@ -313,8 +294,6 @@ h2
     display: flex;
     flex-direction: column;
     align-items: center;
- 
-   
 }
 .titre_populaires
 {
@@ -322,7 +301,7 @@ h2
     display:flex;
     justify-content: space-between;
     align-items: center;
-   width: 80%;
+    width: 80%;
     margin-top: 10px;
     font-size: large;
 }
@@ -336,84 +315,72 @@ h2
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   
-    
    margin: 20px;
-
-   
 }
 .les_plus_populaires article
 {
     border-radius: 15px 15px 15px 15px;
     display: flex;
-  
     border: 3px solid white;
     background-color: white;
     margin-bottom: 15px;
-    box-shadow: 15px 20px 20px #f2f2f2;
- 
+    box-shadow: 15px 15px 15px #d6d4d4;
 }
-
 .les_plus_populaires img
 {
-   
     border-radius: 15px 0px 0px 15px;
-    width: 40%;
     min-width: 50%;
     height: 160px;
     object-fit: cover;
-   
 }
 .texte_populaires 
 {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-   margin-left: 15px;
-    
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 15px;
+}
+.texte_populaires h3
+{
+   flex-basis: 44px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 .texte_populaires p
 {
-    margin-top: -10px;
-    padding-bottom: 10px;
+    margin: 0px 0px 5px 0px;
+    flex-basis: 30%;
 }
 
-                                        /* activité à marseille */
-
+                                     /* activité à marseille */
 h4
 {
    margin-left: 20px;
    padding-top: 50px;
    font-size: x-large;
 }
-
 .conteneur_activites
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-   
 }
-
-
 .cadre 
 {  
-   
     border: 1px solid #f2f2f2;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
     box-shadow: 10px 10px 10px #f2f2f2;
     margin-bottom: 30px;
-    
 }
 .cadre2
 {
     border: 1px solid #f2f2f2;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
-     box-shadow: 5px 5px 5px #f2f2f2;
-     margin-bottom: 30px;
-    
+    box-shadow: 5px 5px 5px #f2f2f2;
+    margin-bottom: 30px;
 }
 .block_cadre, .block_cadre2
 {
@@ -423,7 +390,6 @@ h4
 {   
     object-fit: cover;
 }
-
 h5
 {   
     font-size: 0.9em;
@@ -443,7 +409,6 @@ h5
     width: 100%;
     height:230px;
     object-fit: cover;
-    
 }
 .act3
 {
@@ -480,10 +445,8 @@ h5
 
 footer
 {
-   
     font-size: larger;
     background-color: #f2f2f2;
-  
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -494,12 +457,11 @@ footer div{
     padding-right: 20px;
     padding-left: 20px;
 }
-h4
+footer h4
 {
     margin-left: 0px;
     width: 90%;
     font-size: 18px;
-   
 }
 footer ul{
     padding-left: 0px;
@@ -509,79 +471,53 @@ footer li{
     margin-bottom: 10px;
 }
 
-
-
-
-
-                                     /* media queries*/
-
-
-
-
-@media screen and (max-width: 1024px) 
+                                 /* media queries*/
+ @media screen and (max-width: 1024px) 
 {
     .conteneur_block_hebergements{
         width: 100%;
-      
         margin-right: 0px;
     }
     .hebergement_contener article{
         font-size: 1em;
-       
-        }
-    
-   .conteneur_block{
-       flex-wrap: wrap;
+    }
+    .conteneur_block{
+        flex-wrap: wrap;
    }
    .les_plus_populaires article{
-       flex-direction: column;
-      
-       margin: 20px;
-        
-   }
+        flex-direction: column;
+        margin: 20px;
+    }
    .populaire_contener{
-       
-       width: 100%;
+        width: 100%;
     }
    .les_plus_populaires{
-      
         justify-content: center; 
         flex-direction: row;
     }
    .les_plus_populaires img{
-      
-        width: 100%;
-       border-radius: 15px 15px 0px 0px;
+        border-radius: 15px 15px 0px 0px;
    }
    .texte_populaires{
-      margin-left: 5px;
-      width: 250px;
+        margin-left: 5px;
+        width: 250px;
     }
-    .texte_populaires h3{
-        height: 40px;
-    }
-   .texte_populaires p{
-       margin-bottom: -10px;
-   }
     .cadre_filtre{
-       margin-right: 10px;
+        margin-right: 10px;
    }
-       
-  .block_cadre, .block_cadre2{
-      width: 45%;
+    .block_cadre, .block_cadre2{
+        width: 45%;
   }
-   
-   
-  
- 
 }
-
 
 @media screen and (max-width:576px)
 {   
+    body{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
     .act1, .act2, .act3, .act4, .act5, .act6{
-       
-        height: 130px;
+       height: 130px;
     }
     .cadre, .cadre2{
         height: auto;
@@ -600,15 +536,12 @@ footer li{
     .conteneur_block{
         flex-direction: column-reverse;
     }
-   
-   
-    .hebergement_contener{
+   .hebergement_contener{
         display: flex;
         flex-direction: column;
     }
     .hebergement_contener article{
         box-shadow: 10px 10px 10px #f2f2f2;
-       
     }
     .hebergement_contener img{
         width: 100%;
@@ -634,31 +567,17 @@ footer li{
     }
     .les_plus_populaires article{
         flex-direction: row;
-       
-       
-        margin-right: 0px;
-        width: auto;
     }
     .les_plus_populaires img{
-      height: 150px;
-       min-width: 30%;
+        height: 150px;
+        min-width: 30%;
         border-radius: 15px 0px 0px 15px;
         width: 40%;
     }
-    .texte_populaires{
-        flex-direction: column;
-        justify-content: space-between;
-        display: flex;
-        width: 190px;
-        margin-left: 5px;
-    }
     .texte_populaires h3{
-        margin: 10px 5px 0px 0px;
-        height: auto;
+        margin: 5px 0px 0px 0px;
     }
     .texte_populaires p{
-        margin-top: 0px;
-        padding-bottom: 25px;
         margin-bottom: 0px;
     }
     .conteneur_block_hebergements{
@@ -671,7 +590,6 @@ footer li{
     }
     .icone_recherche{
         display: flex;
-        
         width: 80px;
         height: 48px;
         background-color: #0065fc;
@@ -680,14 +598,18 @@ footer li{
         align-items: center;
         justify-content: center;
     }
-
+    .boutton_rechercher{
+        width: 25%;
+    }
     .boutton_rechercher span{
         display: none;
     }
     .boutton_rechercher i{
         display: block;
     }
-    
+    .bloc_barre_de_recherche{
+        max-width: 370px;
+    }
     input{
         min-width: 50%;
     }
@@ -702,35 +624,31 @@ footer li{
       width: 25px;
       margin-left: 5px;
     }
-   
     nav ul{
         flex-wrap: nowrap;
         justify-content: center;
         padding-left: 0px;
         margin-top: 0px;
-        
-       
     }
     nav li {
         margin-top: 0px;
-    margin-right: 0px;
-    width: 50%;
-    text-align: center;
-    padding-bottom: 10px;
+        margin-right: 0px;
+        width: 50%;
+        text-align: center;
+        padding-bottom: 10px;
     }
     .navigation{
         display: flex;
-    align-items: baseline;
-    flex-wrap: wrap-reverse;
-    flex-direction: column-reverse;
-    width: 100%;
+        align-items: baseline;
+        flex-wrap: wrap-reverse;
+        flex-direction: column-reverse;
+        width: 100%;
     }
     #logo{
         display: flex;
         align-items: flex-start;
         position: absolute;
         margin: 15px;
-        
     }
     .bloc_en_tete{
         width: 100%;
@@ -761,12 +679,13 @@ footer li{
         margin-left: 0px;
         margin-right: 0px;
     }
+    #activites{
+        margin-left: 15px;
+    }
     h4 {
         padding-top: 25px;
-       
     }
     footer{
-        
         padding-left: 10px;
         padding-bottom: 50px;
     }
@@ -781,7 +700,6 @@ footer li{
         margin-bottom: 10px;
         width: 80%;
     }
-  
     body{
         min-width: 250px
     }
