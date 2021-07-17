@@ -193,7 +193,6 @@ input
 {
     color: #0065fc;
     font-size: small;
-    padding-top: 5px;
     padding-bottom: 5px;
 }
  .star_white
@@ -302,6 +301,7 @@ input
     display: grid;
     grid-template-rows: 0.6fr 0.9fr 0fr;
     margin-left: 10px;
+    align-items: flex-start;
 }
 .texte_populaires h2
 {
@@ -311,7 +311,7 @@ input
 }
 .texte_populaires p
 {
-    margin: 0px 0px 5px 0px;
+    margin: 0px;
     font-size: 0.9em;
 }
 
@@ -447,7 +447,7 @@ footer li{
     }
                                 /* media T - Populaires*/
     .populaire_contener{
-        margin-top: 10px;
+        margin-top: 20px;
     }
     .les_plus_populaires{
         grid-template-columns: 1fr 1fr 1fr;
@@ -506,7 +506,7 @@ footer li{
         margin-right: 0px;
     }
     .section_page{
-        padding-left: 20px;
+        padding: 30px;
        
     }
     #logo{
@@ -578,8 +578,12 @@ footer li{
         flex-direction: column-reverse;
         display: flex;
     }
+    #hebergements{
+        margin: 0px 0px 25px 0px;
+    }
     .conteneur_block_hebergements{
         background-color: white;
+        padding: 0px 30px 30px 30px;
     }
     .hebergement_contener{
         grid-template-columns: 1fr;
@@ -587,17 +591,23 @@ footer li{
     .afficher_plus{
         margin-top: 30px;
         margin-bottom: 0px;
-        margin-left: 20px;
     }
                             /* media M - Populaires */
     .populaire_contener{
         border-radius: 0px;
     }
+    .titre_populaires{
+        margin-bottom: 0px;
+    }
+
+    .titre_populaires h2{
+        margin-bottom: 25px;
+    }
     .les_plus_populaires{
         grid-template-columns: 1fr;
     }
     .les_plus_populaires article{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.8fr 1fr;
     }
     .les_plus_populaires img{
         border-radius: 15px 0px 0px 15px;
@@ -615,10 +625,14 @@ footer li{
                             /* media M - Activité */
     #activites{
         padding-left: 30px;
+        margin-top: 20px;
     }
     .conteneur_activites{
         grid-template-columns: 1fr;
-        padding: 20px;
+        padding: 30px;
+    }
+    .conteneur_activites img {
+        height: 130px;
     }
     .cadre_activite1{
         grid-column: 1;
@@ -644,9 +658,7 @@ footer li{
         grid-row: 6;
         grid-column:1;
     }
-    .conteneur_activites img {
-        height: 200px;
-    }
+    
                                     /* media M - Footer */
     footer{
       
