@@ -2,7 +2,7 @@
 body
 {
     font-family : 'Raleway', sans-serif ;
-    margin-top: 5px;
+    margin-top: 4px;
 }
 #bloc_page
 {
@@ -205,11 +205,7 @@ input
     display: grid;
 }
 .hebergement_contener
-<<<<<<< HEAD
-{   
-=======
-{   color: ;
->>>>>>> ac145229be1ca245c5eedda287d930bf5eb8690d
+{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
