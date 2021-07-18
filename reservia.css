@@ -137,7 +137,11 @@ input
 {
     display: flex;
     border: 2px solid #f2f2f2;
+<<<<<<< HEAD
     border-radius: 27px;
+=======
+    border-radius: 27px 27px 27px 27px;
+>>>>>>> c14c0279cf7b164ea948f65ed5c99931a7c2ed62
     margin-right: 20px;
     padding-right: 15px;
     margin-bottom: 10px;
@@ -438,6 +442,9 @@ footer li{
     .star{
         margin-top: 5px;
     }
+    .star{
+        margin-top: 5px;
+    }
     .heberg_texte h2{
         align-items: center;
         display: grid;
@@ -505,7 +512,12 @@ footer li{
         margin-right: 0px;
     }
     .section_page{
+<<<<<<< HEAD
         padding: 0px 30px 0px 30px;
+=======
+        padding: 30px 30px 0px 30px;
+       
+>>>>>>> c14c0279cf7b164ea948f65ed5c99931a7c2ed62
     }
     #logo{
         position: absolute;
