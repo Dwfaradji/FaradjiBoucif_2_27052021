@@ -2,15 +2,23 @@
 body
 {
     font-family : 'Raleway', sans-serif ;
+<<<<<<< HEAD
     margin:4px 0px 0px 0px;
+=======
+    margin-top: 5px;
+>>>>>>> main
 }
 #bloc_page
 {
     margin-left: auto;
     margin-right: auto;
     max-width:1500px;
+<<<<<<< HEAD
     padding-left: 20px;
     padding-right:20px;
+=======
+    
+>>>>>>> main
 }
 a
 {   margin-bottom: auto;
@@ -414,6 +422,10 @@ footer
     justify-content: space-between;
     gap: 30px;
     max-width: 1500px;
+<<<<<<< HEAD
+=======
+    margin: auto;
+>>>>>>> main
 }
 footer h4
 {
@@ -506,6 +518,7 @@ footer li{
     body{
         margin-left: 0px;
         margin-right: 0px;
+        min-width: 250px;
     }
     .section_page{
         padding: 0px 30px 0px 30px;
@@ -592,6 +605,7 @@ footer li{
                             /* media M - Populaires */
     .populaire_contener{
         border-radius: 0px;
+    
     }
     .titre_populaires{
         margin-bottom: 0px;
@@ -658,6 +672,4 @@ footer li{
     footer{
         grid-template-columns: 1fr;
     }
-}
-
-   
+}   
