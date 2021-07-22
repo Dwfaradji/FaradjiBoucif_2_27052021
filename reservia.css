@@ -219,7 +219,7 @@ input
     display: flex;
     border-radius: 15px;
     box-shadow: 15px 15px 15px  #d6d4d4;
-    border: 3px solid white;
+    border: 3px solid rgb(254, 254, 254);
     background-color: white;
 }
 .hebergement_contener img
@@ -286,7 +286,7 @@ input
     border-radius: 15px;
     display: grid;
     grid-template-columns: 130px 2fr;
-    border: 3px solid white;
+    border: 3px solid rgb(254, 254, 254);
     background-color: white;
     margin-bottom: 15px;
     box-shadow: 15px 15px 15px #d6d4d4;
