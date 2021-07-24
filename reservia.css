@@ -1,5 +1,4 @@
                                         /* haut de la page */
-
 body
 {
     font-family : 'Raleway', sans-serif ;
@@ -194,6 +193,7 @@ input
     color: #0065fc;
     font-size: small;
     padding-bottom: 5px;
+    align-self: flex-end;
 }
  .star_white
 {
@@ -232,24 +232,21 @@ input
 }
 .heberg_texte
 {   
-    padding-left: 5px;
-    font-size: 0.9em;
-}
-.heberg_texte h2 
-{
-    font-size: 1.1em;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    height: 29px;
-    align-items: flex-end;
     display: grid;
+    grid-template-rows: 1.7fr 0fr 0fr;
+    align-items: center;
+    padding-left: 5px;
+}
+.heberg_texte p
+{
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 .heberg_texte h3
 {
-    font-weight: normal;
-    font-size: 0.9em;
+    font-size: 1em;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 .afficher_plus
 {
@@ -301,19 +298,16 @@ input
 .texte_populaires 
 {
     display: grid;
-    grid-template-rows: 0.6fr 0.9fr 0fr;
+    grid-template-rows: 0.4fr 0.4fr;
     margin-left: 10px;
-    align-items: flex-start;
 }
-.texte_populaires h2
+.texte_populaires h3
 {
     font-size: 1em;
     margin-bottom: 2px;
     margin-top: 5px;
 }
-.texte_populaires h3{
-    font-weight: normal;
-    font-size: 0.9em;
+.texte_populaires p{
     margin: 0px;
 }
 
@@ -330,7 +324,7 @@ input
     column-gap: 30px;
     margin-bottom: 20px;
 }
-.conteneur_activites h2{
+.conteneur_activites h3{
     padding-left: 15px;
     font-size: 0.9em;
 }
@@ -409,24 +403,22 @@ footer
 {
     font-size: larger;
     background-color: #f2f2f2;
+   
+}
+.bloc_footer
+{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 30px;
-    justify-content: space-between;
-    gap: 30px;
     max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-footer h4
-{
-    font-size: 1.1em;
+    margin: auto;
+    gap: 30px;
 }
 footer h2
 {
-    font-weight: normal;
-    font-size: 1em;
+    font-size: 1.1em;
 }
+
 footer ul{
     padding-left: 0px;
 }
@@ -504,13 +496,12 @@ footer li{
         height: 370px;
     }
 }
-@media screen and (max-width:576px)
+@media screen and (max-width:646px)
 {                                   /* media M - En tête */
     body{
         margin-left: 0px;
         margin-right: 0px;
         min-width: 250px;
-        padding: 0px;
     }
     #bloc_page{
         padding: 0px;
@@ -664,7 +655,7 @@ footer li{
         grid-column:1;
     }
                              /* media M - Footer */
-    footer{
+    .bloc_footer{
         grid-template-columns: 1fr;
     }
 }   
