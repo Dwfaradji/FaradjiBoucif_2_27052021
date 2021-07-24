@@ -537,7 +537,7 @@ footer li{
         width: 50%;
         text-align: center;
         padding: 10px;
-        border-bottom: 2px solid #f2f2f2;
+        border-bottom: 3px solid #f2f2f2;
         margin-top: 30px;
     }
     nav li:hover{
