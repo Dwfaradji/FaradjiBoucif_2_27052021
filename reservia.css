@@ -9,8 +9,8 @@ body
     margin-left: auto;
     margin-right: auto;
     max-width:1500px;
-    padding-left: 20px;
-    padding-right:20px;
+    padding-left: 30px;
+    padding-right:30px;
 }
 a
 {   margin-bottom: auto;
@@ -26,11 +26,12 @@ header
 }
 #logo
 {
-    display: flex;
+    display: grid;
+    align-items: flex-end;
 }
 #logo img
 {
-    height: 60px;
+    height: 50px;
 }
                                          /* navigation */
 .navigation
@@ -72,7 +73,7 @@ nav ul
 h1
 {   
     font-size: 1.3em;
-    margin-bottom: 5px;
+    margin-top: 50px;
 }
                                       /* Barre de recherche */
 .bloc_barre_de_recherche
@@ -106,7 +107,8 @@ input
     background-color: #0065fc;
     color: white;
     border: 0px solid #f2f2f2;
-    border-radius: 0px 15px 15px 0px ;
+    border-radius: 0px 15px 15px 0px;
+    width: 140px;
 }
 .boutton_rechercher i
 {
@@ -118,11 +120,11 @@ input
     display: flex;
     flex-wrap: wrap;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 .conteneur_filtres h2
-{   font-size: 1.2em;
-    margin-right: 10px;
+{   font-size: 1.1em;
+    margin-right: 30px;
 }
 .bloc_filtres :hover
 {
@@ -138,7 +140,7 @@ input
 .cadre_filtre
 {
     display: flex;
-    border: 2px solid #f2f2f2;
+    border: 2px solid #d8d8d8;
     border-radius: 27px;
     margin-right: 20px;
     padding-right: 15px;
@@ -219,7 +221,7 @@ input
     display: flex;
     border-radius: 15px;
     box-shadow: 15px 15px 15px  #d6d4d4;
-    border: 3px solid rgb(254, 254, 254);
+    border: 5px solid rgb(254, 254, 254);
     background-color: white;
 }
 .hebergement_contener img
@@ -235,7 +237,7 @@ input
     display: grid;
     grid-template-rows: 1.7fr 0fr 0fr;
     align-items: center;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 .heberg_texte p
 {
@@ -283,7 +285,7 @@ input
     border-radius: 15px;
     display: grid;
     grid-template-columns: 130px 2fr;
-    border: 3px solid rgb(254, 254, 254);
+    border: 5px solid rgb(254, 254, 254);
     background-color: white;
     margin-bottom: 15px;
     box-shadow: 15px 15px 15px #d6d4d4;
@@ -322,7 +324,6 @@ input
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 30px;
-    margin-bottom: 20px;
 }
 .conteneur_activites h3{
     padding-left: 15px;
@@ -401,9 +402,8 @@ input
                                   /* Pied de page*/
 footer
 {
-    font-size: larger;
     background-color: #f2f2f2;
-   
+    margin-top: 50px;
 }
 .bloc_footer
 {
@@ -429,7 +429,12 @@ footer li{
                             /* Media Queries - Tablette et Mobile */
 
  @media screen and (max-width: 1024px) 
-{                               /* media T - Hébergements */
+{   
+    #bloc_page{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+                                  /* media T - Hébergements */
     .conteneur_block{
         grid-template-columns: auto;
     }
@@ -439,9 +444,6 @@ footer li{
     .heberg_texte h2{
         align-items: center;
         display: grid;
-    }
-    .heberg_texte{
-        margin-left: 5px;
     }
                                 /* media T - Populaires*/
   
@@ -616,7 +618,6 @@ footer li{
     .texte_populaires{
         align-items: flex-start;
         grid-template-rows: 0.4fr;
-        margin-left: 15px;
     }
                             /* media M - Activité */
     #activites{
